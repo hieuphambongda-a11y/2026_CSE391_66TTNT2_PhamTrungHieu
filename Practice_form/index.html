@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 165px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset style="border: none;">
+        <legend style="font-weight:bold; border-bottom:1px solid black;">Basic Info</legend>
+        <div>
+            <input type="hidden" name="employee id" value="9">
+            <label for="">Employee ID</label>
+            <span>9</span>
+        </div><br>
+
+        <div>
+            <input type="hidden" name="last_name" value="Dodsworth">
+            <label>Last Name</label>
+            <span>Dodsworth</span>
+        </div><br>
+
+        <div>
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name" id="first_name" value="Anne">
+        </div><br>
+
+        <div>
+            <label>Gender</label>
+
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="zzz" checked>
+            <label for="zzz">ZZZ</label>
+        </div><br>
+
+        <div>
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" value="Sales Representative" required>
+        </div><br>
+
+        <div>
+            <label for="suffix">Suffix</label>
+            <input type="text" name="suffix" id="suffix" value="Ms." required>
+        </div><br>
+
+        <div>
+            <label for="birth">BirthDate</label>
+            <input type="date" name="bitrh" id="birth"required><span>(?)</span>
+        </div><br>
+
+        <div>
+            <label for="hire">HireDate</label>
+            <input type="date" name="hire" id="hire" required>
+        </div><br>
+
+        <div>
+            <label for="ssn">SSN # (if applicable)</label>
+            <input type="text" name="ssn" id="ssn">
+        </div><br>
+
+        <div>
+            <label for="report">Report to</label>
+            <select name="report" id="report">
+                <option value="" disabled selected>-- Select --</option>
+                <option value="Buchanan">Buchanan</option>
+                <option value="Buchanan2">Buchanan 2</option>
+                <option value="Buchanan3">Buchanan 3</option>
+            </select>
+        </div>
+    </fieldset><br>
+
+    <fieldset style="border: none;">
+        <legend style="font-weight:bold; border-bottom:1px solid black;">Contact Info</legend>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="eamil" placeholder="name@example.com" required>
+        </div><br>
+
+        <div>
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address" value="7 Houndstooth Rd." required>
+        </div><br>
+
+        <div>
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" value="London" required>
+        </div><br>
+
+        <div>
+            <label for="region">Region</label>
+            <input type="text" name="region" id="region">
+        </div><br>
+
+        <div>
+            <label for="code">Postal Code</label>
+            <input type="text" name="code" id="code" value="WG2 7LT" required>
+        </div><br>
+
+        <div>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="" disabled selected>-- Select Country--</option>
+                <option value="russian">Russian</option>
+                <option value="us">US</option>
+                <option value="VN">Viet Nam</option>
+            </select>
+        </div><br>
+
+        <div>
+            <label for="phone">US Home Phone</label>
+            <input type="tel" name="phone" id="phone" value="(234)234-2342" required>
+        </div><br>
+
+        <div>
+            <label for="photo">Photo</label>
+            <input type="file" name="photo" id="photo" accept="image/*" required>
+        </div><br>
+    </fieldset>
+
+    <fieldset style="border: none;">
+        <legend style="font-weight:bold; border-bottom:1px solid black;">Optional Info</legend>
+        <div>
+            <label>Notes</label>
+            <textarea rows="2" cols="35"></textarea>
+        </div><br>
+
+        <div>
+            <label>Preferred Shift</label>
+
+            <input type="checkbox" name="pre" id="regular">
+            <label for="regular">Regular</label>
+
+            <input type="checkbox" name="graveyard" id="graveyard" checked>
+            <label for="graveyard">Gravy Yard</label>
+        </div><br>
+
+        <div>
+            <label>Active?</label>
+            <input type="checkbox" checked>
+        </div><br>
+
+        <div>
+            <label>Are you human</label>
+            <span> TIDAWQ</span><br>
+            <span>Click to channges</span>
+            <input type="text">
+
+        </div>
+    </fieldset>
+    <br><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Cancel">
+</body>
+
+</html>
