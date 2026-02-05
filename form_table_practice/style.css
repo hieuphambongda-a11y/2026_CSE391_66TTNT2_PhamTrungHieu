@@ -1,0 +1,95 @@
+body{
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+/* CSS Menu */
+nav{
+    background-color:  #212529;
+    display: flex;
+    align-items: center;
+   
+}
+ul{
+    list-style: none;
+    gap: 5px;
+    display: flex;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+/* END */
+
+/* CSS table */
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+th, td{
+    padding: 5px;
+    text-align: left;
+}
+
+.action{
+    display: flex;
+    gap: 5px;
+}
+
+.edit{
+    font-size: 24px;
+    background-color: yellow;
+}
+
+.delete{
+    font-size: 24px;
+    background-color: red;
+}
+/* END */
+
+/* CSS Form */
+.form-header{
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.form-add{
+    width: 600px;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.form-body {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.row{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    align-items: center;
+}
+.col{
+    width: 50%;
+}
+
+.gender div{
+    margin-top: 5px;
+    flex-direction: column;
+}
+.form-footer{
+    margin-top: 20px;
+    text-align: right;
+}

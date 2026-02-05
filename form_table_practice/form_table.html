@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Table and Form</title>
+</head>
+
+<body>
+    <!-- MENU -->
+    <header>
+        <nav>
+            <a href="#">HR Management</a>
+            <div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <form style="margin-left: auto;">
+                <input type="search" placeholder="Search..." style="font-size: 20px;">
+                <button type="submit" style="font-size: 20px;">Search</button>
+            </form>
+        </nav>
+    </header>
+
+    <!-- End MENU -->
+
+    <main>
+        <!-- Tạo tiêu đề và ADD -->
+        <div class="container">
+            <div>
+                <h3>Employee</h3>
+            </div>
+
+            <div>
+                <button style="font-size: 24px; background-color: blue;">+ Add</button>
+            </div>
+        </div>
+
+        <!-- END -->
+
+        <!-- TABLE -->
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Position</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Fatima Beatriz</td>
+                    <td>FatimaBeatriz@gmail.com</td>
+                    <td>0985674321</td>
+                    <td>Staff</td>
+                    <td class="action">
+                        <button type="button" class="edit">Edit</button>
+                        <button type="button" class="delete">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Gabriel Hanna</td>
+                    <td>GabrielHanna@gmail.com</td>
+                    <td>03536742311</td>
+                    <td>Staff</td>
+                    <td class="action">
+                        <button type="button" class="edit">Edit</button>
+                        <button type="button" class="delete">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Charles Diya</td>
+                    <td>CharlesDiya@gmail.com</td>
+                    <td>0347658833</td>
+                    <td>Staff</td>
+                    <td class="action">
+                        <button type="button" class="edit">Edit</button>
+                        <button type="button" class="delete">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Frank Lamdo</td>
+                    <td>FrankLamdo@gmail.com</td>
+                    <td>0975444768</td>
+                    <td>Manager</td>
+                    <td class="action">
+                        <button type="button" class="edit">Edit</button>
+                        <button type="button" class="delete">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Louis Tom</td>
+                    <td>LouisTom@gmail.com</td>
+                    <td>0789568223</td>
+                    <td>Staff</td>
+                    <td class="action">
+                        <button type="button" class="edit">Edit</button>
+                        <button type="button" class="delete">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- END -->
+    </main>
+    <!-- FORM -->
+    <div class="form-add">
+        <div class="form-header">
+            <span>New Employee</span>
+            <button type="button">X</button>
+        </div>
+
+        <div class="form-body">
+            <form action="" id="myForm">
+                <div class="row">
+                    <div class="col">
+                        <label for="fullname" class="form-label">Name</label><br>
+                        <input type="text" class="form-control" id="fullname" name="fullname" required>
+                    </div>
+
+                    <div class="col">
+                        <label for="email" class="form-label">Email</label><br>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="phone" class="form-label">Phone</label><br>
+                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="col">
+                        <label for="pos" class="form-label">Position</label><br>
+                        <select name="pos" id="pos" class="form-select" style="font-size: 20px;" required>
+                            <option value="" disabled selected> -- Select Position -- </option>
+                            <option value="Staff">Staff</option>
+                            <option value="Manager">Manager</option>
+                            <option value="CEO">CEO</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="gender">
+                    <label>Sex</label>
+                    <div>
+                        <input type="radio" name="sex" id="male" checked>
+                        <label for="male">Male</label>
+                        <input type="radio" name="sex" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-footer">
+            <button type="submit" form="myform" style="font-size: 24px; background-color: green;">Save</button>
+            <button type="button" style="font-size: 24px; background-color: gray;">Close</button>
+        </div>
+    </div>
+<!-- END -->
+
+</body>
+
+</html>
