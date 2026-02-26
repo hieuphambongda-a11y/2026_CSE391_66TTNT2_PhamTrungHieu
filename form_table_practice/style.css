@@ -65,9 +65,13 @@ th, td{
     padding: 10px;
 }
 .form-add{
+    display: none;
     width: 600px;
     border: 1px solid black;
     margin-top: 20px;
+}
+#toggleForm:checked ~ .form-add {
+    display: block;
 }
 
 .form-body {
@@ -89,7 +93,34 @@ th, td{
     margin-top: 5px;
     flex-direction: column;
 }
-.form-footer{
-    margin-top: 20px;
-    text-align: right;
+.form-footer {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+.form-footer button,
+.form-footer label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 24px;
+    padding: 0 18px;
+
+    font-size: 24px;
+    line-height: normal;
+
+    border: 1px solid #333;
+    cursor: pointer;
+}
+/* SAVE - xanh lá */
+.form-footer button {
+    background-color: #28a745;
+    color: white;
+}
+
+/* CLOSE - xám */
+.form-footer label {
+    background-color: #6c757d;
+    color: white;
 }

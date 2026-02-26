@@ -28,7 +28,8 @@
     </header>
 
     <!-- End MENU -->
-
+      <!-- checkbox ẩn -->
+                <input type="checkbox" id="toggleForm" hidden>
     <main>
         <!-- Tạo tiêu đề và ADD -->
         <div class="container">
@@ -37,7 +38,12 @@
             </div>
 
             <div>
-                <button style="font-size: 24px; background-color: blue;">+ Add</button>
+
+                <!-- ADD BUTTON -->
+                <label for="toggleForm" style="font-size:24px; background:blue; color:white; border: 2px solid black; cursor: pointer;">
+                        + Add
+                </label>
+
             </div>
         </div>
 
@@ -117,10 +123,10 @@
         <!-- END -->
     </main>
     <!-- FORM -->
-    <div class="form-add">
+    <div class="form-add" id="addForm">
         <div class="form-header">
             <span>New Employee</span>
-            <button type="button">X</button>
+            <label for="toggleForm" style="cursor:pointer;">X</label>
         </div>
 
         <div class="form-body">
@@ -167,11 +173,11 @@
         </div>
 
         <div class="form-footer">
-            <button type="submit" form="myform" style="font-size: 24px; background-color: green;">Save</button>
-            <button type="button" style="font-size: 24px; background-color: gray;">Close</button>
+            <button type="submit" form="myform">Save</button>
+            <label for="toggleForm">Close</label>
         </div>
     </div>
-<!-- END -->
+    <!-- END -->
 
 </body>
 
